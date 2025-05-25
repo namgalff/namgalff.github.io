@@ -1,14 +1,24 @@
 
-
-
+import HeaderComponent from "./components/HeaderComponent"
+import Section1 from "./sections/Section1"
+import Section2 from "./sections/Section2"
+import Section3 from "./sections/Section3"
+import Test from "./sections/Test"
 function App() {
 
 
   return (
-    <>
-    <div className="flex text-red-500  w-screen justify-center "> aha</div>
+    <div className="flex flex-col " >
+       <HeaderComponent />
+    <Section1 />
+     
+    <Section2 />
+     <Test/>
+    <Section3/>
+  
+   
     
-    </>
+    </div>
   )
 }
 

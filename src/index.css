@@ -4,13 +4,58 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 
 
+}
+
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  /* adjust width and color */
+}
+.justify-last {
+  text-align: justify;
+  text-align-last: justify;
+}
+@font-face {
+  font-family: 'gmrkB';
+
+  font-weight: normal;
+  font-style: normal;
+  src: url('./assets/fonts/GmarketSansBold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'gmrkL';
+
+  font-weight: normal;
+  font-style: normal;
+  src: url('.?assets/fonts/GmarketSansLight.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'gmrkM';
+
+  font-weight: normal;
+  font-style: normal;
+  src: url('./assets/fonts/GmarketSansMedium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'inter';
+
+  font-weight: normal;
+  font-style: normal;
+  src: url('./assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
 
  @theme {
   
    --breakpoint-sm: 550px;
+  --font-gmrkL : gmrkL ;
+  --font-gmrkM: gmrkM;
+  --font-gmrkB: gmrkB;
+  --font-inter : inter;
+
  }
