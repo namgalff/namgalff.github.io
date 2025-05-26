@@ -6,25 +6,14 @@ import { useEffect, useState,useRef } from "react";
 
 const Section1 = () => {
   
-   const moveBox = (index) => {
-    const el = linkRefs.current[index];
-    if (el) {
-      const { offsetLeft, offsetTop, offsetWidth, offsetHeight } = el;
-      setBoxStyle({
-        left: offsetLeft,
-        top: offsetTop,
-        width: offsetWidth,
-        height: offsetHeight,
-      });
-    }
-  };
+
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
    useEffect(() => {
     const move = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
-    //window.addEventListener("mousemove", move);
+   // window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);
   }, []);
     return (
@@ -38,7 +27,7 @@ const Section1 = () => {
           animate={{
             x: position.x - 12 , // center image
             y: position.y - 12,
-            rotateY: [0, 0],
+            rotateY: [0, 360],
 
           }}
            transition={{
