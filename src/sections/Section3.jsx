@@ -1,26 +1,31 @@
 import React from 'react'
-
+import Section3Card from '../components/Section3Card'
+import { useState } from 'react'
 const Section3 = () => {
+        const [tab, setTab] = useState(0)
+        const clickTab = (id)=>{
+                return ()=>setTab(id)
+        }
   return (
-    <div className='bg-black h-screen w-screen flex items-center justify-center text-white font-gmrkM'>
-            <div className=' w-[70vw]'>
-                <div className='text-white flex text-[1.5vw]  justify-around mb-[-0.7%] '>
-                        <p className=' w-[20%] text-center py-[1%] bg-emerald-800 rounded-t-3xl  '>LES 3U </p>
-                        <p className='w-[20%] text-center py-[1%]  '>LES 4C </p>
-                        <p className='w-[20%] text-center py-[1%]'>LES 3 SINGES </p>
-                        <p className='w-[40%] py-[1%] text-center '>IQ ENGAGEMENT QUALITY </p>
+  
+        <div className='flex flex-col items-center w-screen  h-screen py-[2%] text-white font-gmrkM justify-around'>
+                <div className='font-gmrkB text-[4vw] text-center  leading-[100%] w-[50%]'>
+                       NOS CODES D’EXCELLENCE 
                 </div>
-                <div className=' clip-custom flex w-full justify-around rounded-4xl py-[7%] px-[5%] bg-emerald-800   rounded-t-none   '>
-                    <div className='border text-[15vw] opacity-55  font-gmrkB  w-[45%] text-center'>3U</div>
-                    <div className=' flex flex-col justify-center w-[55%]'>
-                            <p className='text-[5vw]'>LES 3U</p>
-                            <p className='text-[1.3vw] opacity-55'>c’est quoi en vrai?</p>
-                            <p className='text-[1.5vw] leading-tight '>UNE AGENCE  INNOVANTE COMME <br/> VOUS POUVEZ LE VOIR C’EST <br/> IMPECABLE CHEZ NOUS JE VOUS <br/> LE GARENTI</p>
-
-                    </div>
+                <div className=' w-[60vw] '>
+                <div className='text-white flex text-[1.2vw]  justify-items-start  '>
+                        <p className={`cursor-pointer w-[20%] text-center py-[1%] rounded-t-3xl ${tab === 0 ? 'bg-white/12' : ''}`}  onClick={clickTab(0)}> LES 3U </p>
+                        <p className={`cursor-pointer w-[20%] text-center py-[1%] rounded-t-3xl ${tab === 1 ? 'bg-white/12' : ''}`} onClick={clickTab(1)}>LES 4C </p>
+                        <p className={`cursor-pointer w-[20%] text-center py-[1%] rounded-t-3xl ${tab === 2 ? 'bg-white/12' : ''}`} onClick={clickTab(2)}>LES 3 SINGES </p>
+                        <p className={`cursor-pointer w-[40%] text-center py-[1%] rounded-t-3xl ${tab === 3 ? 'bg-white/12' : ''}`} onClick={clickTab(3)}>IQ ENGAGEMENT QUALITY </p>
+                </div>
+                <div className=' clip-custom h-[60vh] flex w-full justify-center rounded-4xl py-[7%] px-[3%]  bg-white/12  rounded-t-none   '>
+                   <Section3Card index={tab}/>
 
                 </div>
             </div>
+    
+            
 
     </div>
   )

@@ -1,27 +1,29 @@
-
-import HeaderComponent from "./components/HeaderComponent"
-import Section1 from "./sections/Section1"
-import Section2 from "./sections/Section2"
-import Section3 from "./sections/Section3"
-import Section4 from "./sections/Section4"
-import Test from "./sections/Test"
+import HeaderComponent from "./components/HeaderComponent";
+import Section1 from "./sections/Section1";
+import Section2 from "./sections/Section2";
+import Section3 from "./sections/Section3";
+import Section4 from "./sections/Section4";
+import Section5 from "./sections/Section5";
+import BottomTextComponent from "./components/BottomTextComponent";
+import BgCircles from "./components/BgCircles";
+import Test from "./sections/Test";
 function App() {
+    return (
+        <div className="flex flex-col bg-black  h-[610vh]">
+            <HeaderComponent />
+            <BgCircles />
 
+            <Section1 />
+            <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
+            <Section2 />
 
-  return (
-    <div className="flex flex-col " >
-       <HeaderComponent />
-    <Section1 />
-
-    <Section2 />
-     {/* <Test/> */}
-    <Section3/>
-    <Section4/>
-  
-   
-    
-    </div>
-  )
+            <Section3 />
+            <div className="h-[30vh]"></div>
+            <Section4 />
+            <div className="h-[20vh]"></div>
+            <Section5 />
+        </div>
+    );
 }
 
-export default App
+export default App;
