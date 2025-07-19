@@ -10,12 +10,12 @@ function App() {
 
   return (
     <div className="flex flex-col " >
-       {/* <HeaderComponent />
+       <HeaderComponent />
     <Section1 />
 
-    <Section2 /> */}
+    <Section2 />
      {/* <Test/> */}
-    {/* <Section3/> */}
+    <Section3/>
     <Section4/>
   
    
