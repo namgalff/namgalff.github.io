@@ -9,7 +9,7 @@ const Section2 = () => {
 
 
     return (
-       <div className="w-full">
+       <div className="w-full h-screen border">
       <AnimatePresence mode="wait">
         {showFirst ? (
           <motion.div

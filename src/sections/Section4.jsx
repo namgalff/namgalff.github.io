@@ -29,7 +29,7 @@ const Section4 = () => {
 }
 
   return (
-    <div className='bg-black z-0 relative flex items-center overflow-hidden justify-center h-screen w-screen text-white  '>
+    <div className='bg-black z-0 relative flex items-center overflow-hidden justify-center h-screen w-screen text-white   '>
           <div className='text-black w-[11vw] h-[11vw] flex justify-center items-center cursor-pointer bg-white rounded-full' onClick={showCards}>
             <p className='w-[80%] text-center leading-tight'>CLIQUEZ ICI</p> 
           </div>
@@ -45,7 +45,7 @@ const Section4 = () => {
                    <ProjectCards />
                      <ProjectCards />
           </div>
-           <div className='absolute overflow-hidden w-screen flex left-[100vw] gap-[2vw] items-center justify-center' ref={scope1}>
+           <div className='absolute overflow-hidden w-auto flex left-[100vw] gap-[2vw] items-center justify-center' ref={scope1}>
            <ProjectCards />
              <ProjectCards />
                <ProjectCards />
@@ -63,7 +63,7 @@ const Section4 = () => {
           </div>
 
           
-         
+          
     </div>
   )
 }
