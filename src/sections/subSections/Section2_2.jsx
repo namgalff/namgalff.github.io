@@ -8,20 +8,24 @@ const Section2_2 = () => {
     const [cardN, setcardN] = useState(0)
     return (
         <div className="bg-[#E5E5E5] ">
-        <div className="w-screen h-screen flex items-center justify-center gap-[3vw] ">
+        <div className="w-screen h-screen flex-col flex items-center justify-around gap-[3vw] ">
             <img
                 src={arrow}
-                className="absolute right-[5%] w-[4vw] cursor-pointer z-50"
+                className=" hidden lg:block right-[5%] w-[4vw] cursor-pointer z-50"
                 onClick={()=>{setcardN((l)=>l+1)}}
             />
-            <p className="w-[45vw] text-right text-outline text-[4.5vw] font-gmrkB leading-[100%]">NOS <br/> ARENES <br/> STRATEGIQUES</p>
-            <div className="w-[50vw]">
+            <p className="w-[80vw] text-right text-outline text-[9vw] font-gmrkB leading-none">NOS <br/> ARENES <br/> STRATEGIQUES</p>
+            <div className=""  onClick={()=>{setcardN((l)=>l+1)}}>
                   <Section2Card index={cardN}/>
             </div>
+             <img
+                           src={arrow}
+                           className="  w-[4vw] cursor-pointer"
+                       />
           
 
         </div>
-            <BottomTextComponent text={["FULLY DIGITAL AGENCY","WHO ARE WE?","SCROLL AHEAD PLEASE"]} color={5}/>
+             
         </div>
 
     );

@@ -18,9 +18,9 @@ const Section1 = () => {
     return () => window.removeEventListener("mousemove", move);
   }, []);
     return (
-        <div className="w-screen h-[100vh] flex flex-col items-center justify-center text-white bg-black  ">
-            <img src={bg} className="  absolute  z-0 top-[0%] w-[86vw]"/>
-             <motion.img
+        <div className="w-screen h-screen  flex flex-col items-center justify-center text-white bg-black  ">
+            <img src={bg} className="  absolute  z-0 top-[13%] w-[90vw]"/>
+             {/* <motion.img
           src={coin} 
           alt="cursor"
           className="w-[10vw] absolute top-0 left-0 hidden"
@@ -40,19 +40,19 @@ const Section1 = () => {
       duration: 0.5, 
     },
   }}
-        />
-            <div className="flex flex-col justify-center  items-center mb-[-7%]  z-20">
+        /> */}
+            <div className=" h-[60vh] mt-[30%] flex flex-col gap-[4vh] items-center mb-[-7%]  z-20">
                 
-                <img src={logo} className="w-[5vw] " />
-                <p className="font-gmrkB text-[4vw]">TIME SELLER</p>
-                <p className="font-gmrkM text-[1vw] mt-[2vh]">
-                    we don t do it like others{" "}
+                <img src={logo} className="w-[22vw]  " />
+                <p className="font-gmrkB text-[12vw] w-[60%] text-center leading-none mt-[10%]">TIME SELLER</p>
+                <p className="font-gmrkM text-[3.5vw] w-[40%] text-center  mt-[2vh]">
+                    we don't do it like others{" "}
                 </p>
-                <p className="font-gmrkL text-[01vw]  w-[70%] leading-tight text-center mt-[1%] opacity-80">
+                <p className="font-gmrkL text-[4vw]  w-[40%] leading-tight text-center mt-[1%] opacity-80">
                     Through this guided 3D visit, discover all our various
                     departments in an immersive way.
                 </p>
-                <div className="font-gmrkM border px-[2%] py-[1.5%] rounded-4xl mt-[5%]">
+                <div className="font-gmrkM cursor-pointer border text-[3.5vw] px-[14%] py-[2%] rounded-4xl mt-[5%]">
                     START SAVING TIME NOW{" "}
                 </div>
             </div>

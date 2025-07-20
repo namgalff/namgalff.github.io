@@ -10,18 +10,21 @@ import Test from "./sections/Test";
 function App() {
     return (
         <div className="flex flex-col bg-black  h-[610vh]">
-            <HeaderComponent />
-            <BgCircles />
+            {/* <HeaderComponent /> */}
+            {/* <BgCircles /> */}
 
             <Section1 />
-            <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
             <Section2 />
+             <Section5 />
+            {/* <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
+                <BottomTextComponent text={["FULLY DIGITAL AGENCY","WHO ARE WE?","SCROLL AHEAD PLEASE"]} />
+
 
             <Section3 />
             <div className="h-[30vh]"></div>
             <Section4 />
             <div className="h-[20vh]"></div>
-            <Section5 />
+            */}
         </div>
     );
 }

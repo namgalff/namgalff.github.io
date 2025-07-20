@@ -7,49 +7,47 @@ import linkedin from "../assets/iconLinkedin.png";
 
 const Section5 = () => {
     return (
-        <div className=" relative h-screen overflow-hidden flex items-center justify-center gap-[1vw] text-white font-gmrkM">
+        <div className="  h-[130vh] overflow-hidden flex flex-col items-center justify-between gap-[15vh] text-white font-gmrkM">
                
-            <div className="flex h-[85vh] rounded-4xl pb-[15vh]   flex-col items-center justify-around  bg-[#E6E6E6]/10 w-[23vw]">
-                <img className="w-[5vw]" src={logo} />
-                <p className="text-[2.1vw] w-[50%] text-center leading-tight">
+            <div className="flex rounded-4xl pb-[25%] pt-[5%] h-[70vh] w-[60vw]   flex-col items-center justify-between  bg-[#E6E6E6]/10 ">
+                <img className="w-[15vw]" src={logo} />
+                <p className="text-[7vw] w-[70%] text-center leading-none">
                     BUSINESS INFO
                 </p>
-                <div className="flex flex-col gap-[3vh]">
+                <div className="flex flex-col mt-[7%] text-[3vw] gap-[3vh]">
                     <div className="w-[100%] text-center leading-tight">
                         <p className="text-white/25">phone</p>
                         <p>+213 xxx xxx xxx</p>
                     </div>
-                    <div className="w-[100%] text-center leading-tight">
+                    <div className="w-[100%]  text-center leading-tight">
                         <p className="text-white/25">mail</p>
                         <p>contact@moon.inc</p>
                     </div>
                     <div>
-                        <p className="text-white/25 text-center">socials</p>
-                        <div className="flex items-center justify-center gap-[1.5vw]">
-                            <img className="w-[2vw]" src={insta} />
-                            <img className="w-[2vw]" src={dribble} />
-                            <img className="w-[2vw]" src={youtube} />
-                            <img className="w-[2vw]" src={linkedin} />
+                        <p className="text-white/25 text-center ">socials </p>
+                        <div className="flex items-center  justify-center gap-[3.5vw]">
+                            <img className="w-[5vw]" src={insta} />
+                            <img className="w-[5vw]" src={dribble} />
+                            <img className="w-[5vw]" src={youtube} />
+                            <img className="w-[5vw]" src={linkedin} />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center not-first-of-type:  w-[50vw] h-[85vh] ">
+            <div className="flex flex-col items-center  gap-[3vh] w-[80vw] h-[85vh] ">
                 <div className="flex justify-between w-[100%] leading-tight">
-                    <p className=" justify-last text-[4vw] w-[24vw]  font-gmrkB">
+                    <p className=" justify-last leading-none text-[9vw] w-[50vw]  font-gmrkB">
                         BOOK A CALL
                     </p>
-                    <div className="text-[1.05vw] justify-last  w-[24vw] text-white/25">
-                        <p>UNE AGENCE</p>
-                        <p>INNOCANTE COMME</p>
-                        <p>VOUS POUVEZ LE</p>
-                        <p>VOIR C EST </p>
-                        <p>IMPECABLE CHEZ</p>
-                        <p>NOUS JE VOUS LE </p>
-                        <p>GARENTI</p>
-                    </div>
+                    
+                   
                 </div>
-                <form className="boder flex flex-col gap-4  h-[100%] w-[100%] text-[1.2vw]">
+                <div className="text-[3vw] w-[80vw] leading-none">
+                      <p className="justify-last">UNE AGENCE INNOVANTE COMME <br/> VOUS POUVEZ LE VOIR C’EST<br/>  IMPECABLE CHEZ NOUS JE VOUS </p>
+                      <p>LE GARENTI</p>
+                </div>
+               
+                <form className="boder flex flex-col gap-4  h-[100%] w-[100%] text-[3vw]">
                     <div>
                         <input
                             id="name"
@@ -59,6 +57,7 @@ const Section5 = () => {
                             placeholder="name"
                         />
                     </div>
+                   
 
                     <div>
                         <input
@@ -96,7 +95,7 @@ const Section5 = () => {
                         />
                     </div>
 
-                    <div className="border flex-end text-center mt-auto  rounded-4xl text-[1.4vw] py-[2%] ">
+                    <div className="border flex-end text-center  rounded-4xl text-[3vw] py-[2%] ">
                         GET IN TOUCH
                     </div>
                 </form>
