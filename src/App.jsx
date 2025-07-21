@@ -7,16 +7,18 @@ import Section5 from "./sections/Section5";
 import BottomTextComponent from "./components/BottomTextComponent";
 import BgCircles from "./components/BgCircles";
 import Test from "./sections/Test";
+import MobileNav from "./components/MobileNav";
 function App() {
-    return (
-        <div className="flex flex-col bg-black  h-auto">
-            <HeaderComponent />
-            <BgCircles />
+  return (
+    <div className="flex flex-col bg-black  h-fit overflow-hidden">
+      <MobileNav />
+      <HeaderComponent />
+      {/* <BgCircles /> */}
 
-            <Section1 />
-            <Section2 />
-             <Section5 />
-            {/* <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
+      <Section1 />
+      <Section2 />
+      <Section5 />
+      {/* <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
                 <BottomTextComponent text={["FULLY DIGITAL AGENCY","WHO ARE WE?","SCROLL AHEAD PLEASE"]} />
 
 
@@ -25,8 +27,8 @@ function App() {
             <Section4 />
             <div className="h-[20vh]"></div>
             */}
-        </div>
-    );
+    </div>
+  );
 }
 
 export default App;

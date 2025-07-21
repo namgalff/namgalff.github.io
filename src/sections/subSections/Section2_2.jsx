@@ -32,7 +32,7 @@ const Section2_2 = () => {
         </div>
         <img
           src={arrow}
-          className="  w-[4vw] md:w-[2vw] md:mr-[3vw] cursor-pointer z-50"
+          className="  w-[4vw] md:w-[2vw] md:mr-[3vw] cursor-pointer z-5"
           onClick={() => {
             setcardN((l) => l + 1);
           }}
