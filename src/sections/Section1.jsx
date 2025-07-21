@@ -15,11 +15,11 @@ const Section1 = () => {
     return () => window.removeEventListener("mousemove", move);
   }, []);
   return (
-    <div className="w-screen h-[150vh]  md:h-[110vh] flex flex-col items-center justify-center text-white bg-black  " name='HOME'>
+    <div className="w-screen h-[100vh]  md:h-[110vh] flex flex-col items-center justify-center text-white bg-black  " name='HOME'>
       <div className="h-[20vh] flex w-full"></div>
       <img
         src={bg}
-        className="  absolute  z-0 top-[13%] md:top-[0%] w-[90vw] md:w-[80vw]"
+        className="  absolute  z-0 top-[8%] md:top-[0%] w-[90vw] md:w-[80vw]"
       />
       {/* <motion.img
         src={coin}
@@ -41,20 +41,19 @@ const Section1 = () => {
           },
         }}
       /> */}
-      <div className=" h-full md:w-full mt-[30%] md:mt-[0%] flex flex-col gap-[4vh] md:gap-0 items-center mb-[-7%] md:mb-0 md:pt-[25vh] z-20">
+      <div className=" h-full md:w-full mt-[20%] md:mt-[0%] flex flex-col gap-[4vh] md:gap-0 items-center mb-[-7%] md:mb-0 md:pt-[25vh] z-20">
         <img src={logo} className=" w-[22vw] md:w-[8vw]  md:mb-[1vh]" />
         <p className="font-gmrkB text-[12vw] md:text-[4vw] w-[60%] md:w-[40%] text-center leading-none mt-[10%] md:mt-[0%]">
           TIME SELLER
         </p>
         <p className="font-gmrkM text-[3.5vw] md:text-[1vw] w-[40%] md:w-[30%] text-center  mt-[2vh]">
-          we don't do it like others{" "}
+         Car chaque seconde compte.{" "}
         </p>
-        <p className="font-gmrkL text-[4vw] md:text-[0.8vw]  w-[40%] md:w-[30vw] leading-tight text-center mt-[1%] opacity-80 ">
-          Through this guided 3D visit, discover all our various departments in
-          an immersive way.
+        <p className="font-gmrkL text-[4vw] md:text-[0.8vw]  w-[50%] md:w-[30vw] leading-tight text-center mt-[1%] opacity-80 ">
+          Lorsqu&#39;une personne accorde du temps à une marque, elle y investit déjà une part d&#39;elle meme.
         </p>
-        <div className="font-gmrkM cursor-pointer border text-[3.5vw] md:text-[1vw] md:px-[2vw] md:py-[0.5vw] px-[14%] py-[2%] rounded-4xl mt-[5%] hover:bg-white hover:text-black transition">
-          START SAVING TIME NOW{" "}
+        <div className="font-gmrkM cursor-pointer border text-[4vw] md:text-[1vw] md:px-[2vw] md:py-[0.5vw] px-[14%] py-[2%] rounded-4xl mt-[5%] hover:bg-white hover:text-black transition">
+          Discutons-en{" "}
         </div>
       </div>
     </div>

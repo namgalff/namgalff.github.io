@@ -23,11 +23,11 @@ const Section2_1 = () => {
           </div> */}
           <div className="flex flex-col items-center ">
             <div className="flex w-[70vw] flex-col h-fit md:w-[65vw]">
-              <div className="text-[8vw] md:text-[8vw] w-full flex justify-between flex-col md:flex-row">
+              <div className="text-[13vw] md:text-[8vw] w-full flex justify-between flex-col md:flex-row">
                 <div>QUI</div>
                 <div>SOMMES</div>
               </div>
-              <div className="flex text-[8vw] md:text-[7vw] gap-3 w-full h-fit justify-between items-center">
+              <div className="flex text-[13vw] md:text-[8vw] gap-3 w-full h-fit justify-between items-center">
                 NOUS
                 <div className="text-[1.2vw] h-full border rounded-full w-full justify-center text-justify px-[3vw] py-[1vw]  leading-[1.5vw] hidden md:flex  items-center">
                   <p className="font-gmrkM ">

@@ -26,10 +26,10 @@ const Section5 = () => {
             <div>
               <p className="text-white/25 text-center ">socials </p>
               <div className="flex items-center  justify-center gap-[3.5vw] md:gap-[2vw]">
-                <img className="w-[5vw] md:w-[2.5vw]" src={insta} />
-                <img className="w-[5vw] md:w-[2.5vw]" src={dribble} />
-                <img className="w-[5vw] md:w-[2.5vw]" src={youtube} />
-                <img className="w-[5vw] md:w-[2.5vw]" src={linkedin} />
+                <a href="https://www.instagram.com/agence_mooninc/" target="_blank" rel="noopener noreferrer"><img className="w-[5vw] md:w-[2.5vw] cursor-pointer" src={insta} /></a>
+                <a href="https://dz.linkedin.com/company/moon-inco?trk=public_profile_topcard-current-company" target="_blank" rel="noopener noreferrer"> <img className="w-[5vw] md:w-[2.5vw] cursor-pointer" src={dribble} /></a>
+                 <a href="https://www.youtube.com/@AgenceMoonInc" target="_blank" rel="noopener noreferrer"><img className="w-[5vw] md:w-[2.5vw] cursor-pointer" src={youtube} /></a>
+                 <a href="https://dz.linkedin.com/company/moon-inco?trk=public_profile_topcard-current-company" target="_blank" rel="noopener noreferrer"><img className="cursor-pointer w-[5vw] md:w-[2.5vw]" src={linkedin} /></a>
               </div>
             </div>
           </div>
@@ -37,16 +37,15 @@ const Section5 = () => {
         <div className="flex flex-col items-center  gap-[3vh] w-[80vw] md:w-[60%]  md:h-fit z-50">
           <div className="flex flex-col md:flex-row w-full md:gap-[1vw]">
             <div className="flex justify-between w-[100%] leading-tight md:w-[60%]">
-              <p className=" justify-last leading-none text-[9vw] md:text-[5vw] w-[50vw]  font-gmrkB ">
-                BOOK A CALL
+              <p className=" justify-last leading-none text-[9vw] md:text-[4vw] w-[50vw]  font-gmrkB ">
+               PARLONS DE VOUS
               </p>
             </div>
             <div className="text-[3vw] md:text-[1.3vw] text-white/50 w-[80vw] md:w-full leading-none">
               <p className="justify-last">
-                UNE AGENCE INNOVANTE COMME <br /> VOUS POUVEZ LE VOIR C’EST
-                <br /> IMPECABLE CHEZ NOUS JE VOUS{" "}
+               Des idées qui résonnent. Une exécution qui <br/> performe. Écrivons la  suite  <br/> ensemble.
               </p>
-              <p>LE GARENTI</p>
+             
             </div>
           </div>
 
@@ -106,5 +105,7 @@ const Section5 = () => {
     </div>
   );
 };
-
+//
+//
+//
 export default Section5;

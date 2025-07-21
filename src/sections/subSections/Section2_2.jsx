@@ -7,7 +7,7 @@ import BottomTextComponent from "../../components/BottomTextComponent";
 const Section2_2 = () => {
   const [cardN, setcardN] = useState(0);
   return (
-    <div className="bg-[#E5E5E5] h-screen ">
+    <div className="bg-[#E5E5E5] h-[100vh] ">
       <div className="w-screen h-[60vh] md:h-screen flex-col md:flex-row flex  mt-[15vh] md:mt-[0vh] items-center justify-around gap-[3vw] md:px-[1vw] -z-20">
         {/* <img
           src={arrow}

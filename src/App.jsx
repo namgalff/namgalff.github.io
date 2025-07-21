@@ -10,22 +10,28 @@ import Test from "./sections/Test";
 function App() {
     return (
         // h-auto
-        <div className="flex flex-col bg-black h-[600vh]  ">
+        <div className="flex flex-col bg-black h-[700vh] w-screen overflow-none  ">
             <HeaderComponent />
             <BgCircles />
 
             <Section1 />
+       
+             <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
             <Section2 />
+      
+             <BottomTextComponent text={["FULLY DIGITAL AGENCY","WHO ARE WE?","SCROLL AHEAD PLEASE"]} />
+             <Section3 />
+                <Section4 />
              <Section5 />
-            {/* <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
-                <BottomTextComponent text={["FULLY DIGITAL AGENCY","WHO ARE WE?","SCROLL AHEAD PLEASE"]} />
+           
+               
 
 
-            <Section3 />
+           
             <div className="h-[30vh]"></div>
-            <Section4 />
+         
             <div className="h-[20vh]"></div>
-            */}
+           
         </div>
     );
 }

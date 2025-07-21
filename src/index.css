@@ -24,6 +24,14 @@ textarea::placeholder {
   text-align: left;
   transform: translateY(500%);
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE */
+  scrollbar-width: none;     /* Firefox */
+}
+
 @font-face {
   font-family: 'gmrkB';
 

@@ -26,7 +26,7 @@ export default function ExpandingCard() {
         transition={{ duration: 0.5 }}
         className="z-80  text-sm "
       >
-        <p >hehehe</p>
+        <p className="">CONTENT</p>
       </motion.div>
     </motion.div>
   );
