@@ -10,7 +10,7 @@ const Section2 = () => {
   const [showFirst, setShowFirst] = useState(true);
 
   return (
-    <motion.div className="w-full h-screen md:h-fit border" layout name='QUI SOMME NOUS'>
+    <motion.div className="w-full mb-[5vh] h-screen md:h-fit border" layout name='QUI SOMME NOUS'>
       <AnimatePresence mode="wait">
         {showFirst ? (
           <>

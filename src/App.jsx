@@ -9,26 +9,25 @@ import BgCircles from "./components/BgCircles";
 import Test from "./sections/Test";
 import MobileNav from "./components/MobileNav";
 function App() {
-  return (
-    <div className="flex flex-col bg-black  h-fit overflow-hidden">
-      <MobileNav />
-      <HeaderComponent />
-      {/* <BgCircles /> */}
 
-      <Section1 />
-      <Section2 />
-      <Section5 />
-      {/* <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
-                <BottomTextComponent text={["FULLY DIGITAL AGENCY","WHO ARE WE?","SCROLL AHEAD PLEASE"]} />
+    return (
+        // h-auto
+        <div className="flex flex-col bg-black h-[700vh] w-screen overflow-none  ">
+            <HeaderComponent />
+       <HeaderComponent />
+            <BgCircles />
 
+            <Section1 />
+       
+             <BottomTextComponent text={["@MOON.INC", "www.moon-inc.com"]} />
+            <Section2 />
+      
+             <BottomTextComponent text={["FULLY DIGITAL AGENCY","WHO ARE WE?","SCROLL AHEAD PLEASE"]} />
+             <Section3 />
+                <Section4 />
+             <Section5 />
+           
 
-            <Section3 />
-            <div className="h-[30vh]"></div>
-            <Section4 />
-            <div className="h-[20vh]"></div>
-            */}
-    </div>
-  );
 }
 
 export default App;

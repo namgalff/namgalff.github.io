@@ -7,9 +7,11 @@ import linkedin from "../assets/iconLinkedin.png";
 
 const Section5 = () => {
   return (
+
     <div name='CONTACT' className="  h-[130vh] md:h-[120vh] overflow-hidden flex flex-col md:flex-row items-center justify-between gap-[15vh] md:gap-[2vw] text-white font-gmrkM md:px-[15vw] py-[10vh] ">
       <div className=" h-[130vh] md:h-fit overflow-hidden flex flex-col md:items-stretch md:flex-row items-center justify-between gap-[15vh] md:gap-[2vw] text-white font-gmrkM  ">
         <div className="flex rounded-4xl pb-[25%] md:pb-0 pt-[5%] h-[70vh] md:h-auto w-[60vw] md:w-[40%]  flex-col items-center justify-between md:justify-start md:gap-[4vh]  bg-[#E6E6E6]/10 z-5">
+
           <img className="w-[15vw] md:w-[8vw]" src={logo} />
           <p className="text-[7vw] md:text-[2.5vw] w-[70%] md:py-[5vh] text-center leading-none">
             BUSINESS INFO
@@ -26,31 +28,32 @@ const Section5 = () => {
             <div>
               <p className="text-white/25 text-center ">socials </p>
               <div className="flex items-center  justify-center gap-[3.5vw] md:gap-[2vw]">
-                <img className="w-[5vw] md:w-[2.5vw]" src={insta} />
-                <img className="w-[5vw] md:w-[2.5vw]" src={dribble} />
-                <img className="w-[5vw] md:w-[2.5vw]" src={youtube} />
-                <img className="w-[5vw] md:w-[2.5vw]" src={linkedin} />
+                <a href="https://www.instagram.com/agence_mooninc/" target="_blank" rel="noopener noreferrer"><img className="w-[5vw] md:w-[2.5vw] cursor-pointer" src={insta} /></a>
+                <a href="https://dz.linkedin.com/company/moon-inco?trk=public_profile_topcard-current-company" target="_blank" rel="noopener noreferrer"> <img className="w-[5vw] md:w-[2.5vw] cursor-pointer" src={dribble} /></a>
+                 <a href="https://www.youtube.com/@AgenceMoonInc" target="_blank" rel="noopener noreferrer"><img className="w-[5vw] md:w-[2.5vw] cursor-pointer" src={youtube} /></a>
+                 <a href="https://dz.linkedin.com/company/moon-inco?trk=public_profile_topcard-current-company" target="_blank" rel="noopener noreferrer"><img className="cursor-pointer w-[5vw] md:w-[2.5vw]" src={linkedin} /></a>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center  gap-[3vh] w-[80vw] md:w-[60%] h-[85vh] md:h-fit z-">
+
+      <div className="flex flex-col items-center  gap-[3vh] w-[80vw] md:w-[60%] h-[85vh] md:h-fit z-">
+
           <div className="flex flex-col md:flex-row w-full md:gap-[1vw]">
             <div className="flex justify-between w-[100%] leading-tight md:w-[60%]">
-              <p className=" justify-last leading-none text-[9vw] md:text-[5vw] w-[50vw]  font-gmrkB ">
-                BOOK A CALL
+              <p className=" justify-last leading-none text-[9vw] md:text-[4vw] w-[50vw]  font-gmrkB ">
+               PARLONS DE VOUS
               </p>
             </div>
             <div className="text-[3vw] md:text-[1.3vw] text-white/50 w-[80vw] md:w-full leading-none">
               <p className="justify-last">
-                UNE AGENCE INNOVANTE COMME <br /> VOUS POUVEZ LE VOIR C’EST
-                <br /> IMPECABLE CHEZ NOUS JE VOUS{" "}
+               Des idées qui résonnent. Une exécution qui <br/> performe. Écrivons la  suite  <br/> ensemble.
               </p>
-              <p>LE GARENTI</p>
+             
             </div>
           </div>
 
-          <form className="boder flex flex-col gap-4 md:gap-2  h-[100%] md:h-fit w-[100%] text-[3vw] md:text-[1.5vw]">
+          <form className=" flex flex-col gap-4 md:gap-2 h-[100vh]  md:h-fit w-[100%] text-[3vw] md:text-[1.5vw]">
             <div>
               <input
                 id="name"
@@ -90,9 +93,9 @@ const Section5 = () => {
             <div>
               <textarea
                 id="email"
-                rows="4"
+                rows="6"
                 type="text"
-                className="placeholder-bottom w-full px-0 py-1 bg-transparent border-0 border-b  focus:border-gray-300 border-gray-500  focus:outline-none focus:ring-0"
+                className="placeholder-bottom  w-full px-0 py-1 bg-transparent border-0 border-b  focus:border-gray-300 border-gray-500  focus:outline-none focus:ring-0"
                 placeholder="message"
               />
             </div>
@@ -106,5 +109,7 @@ const Section5 = () => {
     </div>
   );
 };
-
+//
+//
+//
 export default Section5;

@@ -4,12 +4,14 @@ import { motion, AnimatePresence,useAnimate } from "framer-motion";
 import { useState } from "react";
 import ProjectCards from '../components/ProjectCards';
 const Section4 = () => {
-  
+  const [showButton, setShowButton] = useState(true);
   const [scope, animate] = useAnimate()
   const [scope1, animate1] = useAnimate()
   const [scope2, animate2] = useAnimate()
 
   const showCards = ()=>{
+      setShowButton(false);
+
   animate(scope.current, { left: "5vw" }, {
   duration: 3,
   ease: [.01,.8,.52,.95]
@@ -29,10 +31,17 @@ const Section4 = () => {
 }
 
   return (
-    <div className='bg-black z-0 relative flex items-center overflow-hidden justify-center h-screen w-screen text-white   '>
-          <div className='text-black w-[11vw] h-[11vw] flex justify-center items-center cursor-pointer bg-white rounded-full' onClick={showCards}>
-            <p className='w-[80%] text-center leading-tight'>CLIQUEZ ICI</p> 
-          </div>
+    <div className='bg-black z-0  h-[100vh] relative flex items-center overflow-hidden justify-center  w-screen text-white   '>
+          {showButton && (
+  <div
+    className="text-black w-[11vw] h-[11vw] flex justify-center items-center cursor-pointer bg-white rounded-full"
+    onClick={showCards}
+  >
+    <p className='w-[80%] text-center leading-tight'>CLIQUEZ ICI</p> 
+  </div>
+)}
+
+          
           
 
 
