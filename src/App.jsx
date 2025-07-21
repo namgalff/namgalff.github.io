@@ -9,9 +9,9 @@ import BgCircles from "./components/BgCircles";
 import Test from "./sections/Test";
 function App() {
     return (
-        <div className="flex flex-col bg-black  h-[610vh]">
-            {/* <HeaderComponent /> */}
-            {/* <BgCircles /> */}
+        <div className="flex flex-col bg-black  h-auto">
+            <HeaderComponent />
+            <BgCircles />
 
             <Section1 />
             <Section2 />
