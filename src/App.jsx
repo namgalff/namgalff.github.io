@@ -14,8 +14,8 @@ function App() {
         // h-auto
         <div className="flex flex-col bg-black h-[700vh] w-screen overflow-none  ">
             <HeaderComponent />
-       <HeaderComponent />
-            <BgCircles />
+       <MobileNav />
+            {/* <BgCircles /> */}
 
             <Section1 />
        
@@ -27,7 +27,8 @@ function App() {
                 <Section4 />
              <Section5 />
            
+        </div>
 
-}
+)}
 
 export default App;

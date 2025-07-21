@@ -12,7 +12,7 @@ export default function MobileNav() {
     <>
       {/* Hamburger Button */}
       <button
-        className="fixed top-[7vw] left-[10vw] z-[110] md:hidden text-white/80 text-[10vw] focus:outline-none"
+        className="absolute top-[7vw] left-[10vw] z-[110] md:hidden text-white/80 text-[10vw] focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
