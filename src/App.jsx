@@ -7,11 +7,14 @@ import Section5 from "./sections/Section5";
 import BottomTextComponent from "./components/BottomTextComponent";
 import BgCircles from "./components/BgCircles";
 import Test from "./sections/Test";
+import MobileNav from "./components/MobileNav";
 function App() {
+
     return (
         // h-auto
         <div className="flex flex-col bg-black h-[700vh] w-screen overflow-none  ">
             <HeaderComponent />
+       <HeaderComponent />
             <BgCircles />
 
             <Section1 />
@@ -24,16 +27,7 @@ function App() {
                 <Section4 />
              <Section5 />
            
-               
 
-
-           
-            <div className="h-[30vh]"></div>
-         
-            <div className="h-[20vh]"></div>
-           
-        </div>
-    );
 }
 
 export default App;
