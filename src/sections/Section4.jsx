@@ -31,13 +31,13 @@ const Section4 = () => {
 }
 
   return (
-    <div className='bg-black z-0  h-[100vh] relative flex items-center overflow-hidden justify-center  w-screen text-white   '>
+    <div className='bg-black    h-[100vh] relative flex items-center overflow-hidden justify-center  w-screen text-white   '>
           {showButton && (
   <div
-    className="text-black w-[11vw] h-[11vw] flex justify-center items-center cursor-pointer bg-white rounded-full"
+    className="text-black lg:w-[11vw] z-[100] lg:h-[11vw] w-[30vw] h-[30vw] flex justify-center items-center cursor-pointer bg-white rounded-full"
     onClick={showCards}
   >
-    <p className='w-[80%] text-center leading-tight'>CLIQUEZ ICI</p> 
+    <p className='w-[80%]  text-center leading-tight '>CLIQUEZ ICI</p> 
   </div>
 )}
 

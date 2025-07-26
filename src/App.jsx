@@ -8,14 +8,16 @@ import BottomTextComponent from "./components/BottomTextComponent";
 import BgCircles from "./components/BgCircles";
 import Test from "./sections/Test";
 import MobileNav from "./components/MobileNav";
+import Bglights from "./components/Bglights";
 function App() {
 
     return (
         // h-auto
-        <div className="flex flex-col bg-black h-[700vh] w-screen overflow-none  ">
+        <div className="flex  flex-col bg-black h-[700vh] w-screen overflow-none  ">
+                 <Bglights />
             <HeaderComponent />
-       <MobileNav />
-            {/* <BgCircles /> */}
+             <MobileNav />
+       
 
             <Section1 />
        
