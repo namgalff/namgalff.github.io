@@ -16,7 +16,7 @@ const Section2 = () => {
           <>
             <motion.div
               key="first"
-              className="h-screen md:h-[120vh]  flex items-center justify-center cursor-pointer "
+              className="h-screen md:h-[100vh]  flex items-center justify-center cursor-pointer "
               initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

@@ -3,9 +3,8 @@ import arrow from "../../assets/iconArrowRight.png";
 import BottomTextComponent from "../../components/BottomTextComponent";
 const Section2_1 = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col z-50">
       <div className=" h-screen w-screen   text-white flex flex-col items-center justify-around ">
-        
         <div className="flex flex-col items-center  font-gmrkB leading-none">
           {/* <div className="text-[12vw] md:text-[8vw] w-[70vw] mb-[-3%]   ">
             QUI SOMMES <label className="lg:hidden">NOUS</label>
@@ -30,9 +29,9 @@ const Section2_1 = () => {
               <div className="flex text-[13vw] md:text-[8vw] gap-3 w-full h-fit justify-between items-center">
                 NOUS
                 <div className="text-[1.2vw] h-full border rounded-full w-full justify-center text-justify px-[3vw] py-[1vw]  leading-[1.5vw] hidden md:flex  items-center">
-                  <p className="font-gmrkM ">
-                    UNE AGENCE INNOVANTE COMME VOUS POUVEZ LE VOIR C’EST
-                    IMPECABLE CHEZ NOUS JE VOUS LE GARENTI
+                  <p className="font-gmrkM uppercase">
+                    Une agence 360 qui fait tout, mais pas n’importe comment.
+                    Chaque action est pensée, chaque choix est justifié.
                   </p>
                 </div>
                 ?
@@ -41,11 +40,11 @@ const Section2_1 = () => {
           </div>
           <div className="md:hidden font-gmrkM text-[3.5vw] w-[70vw] mt-[15%]">
             <p
-              className="justify-last 
+              className="justify-last uppercase
             "
             >
-              UNE AGENCE INNOVANTE <br /> COMME VOUS POUVEZ LE VOIR <br /> C’EST
-              IMPECABLE CHEZ NOUS <br />
+              Une agence 360 qui fait tout, mais pas n’importe comment. Chaque
+              action est pensée, chaque choix est justifié.{" "}
             </p>
             JE VOUS LE GARENTI
           </div>

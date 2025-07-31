@@ -2,32 +2,32 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import img from "../assets/imageProjectHolder.png"
 
-export default function ExpandingCard() {
+export default function ExpandingCard({image}) {
   const [hovered, setHovered] = useState(false);
 
   return (
     <motion.div
-      onHoverStart={() => setHovered(true)}
+      onHoverStart={() => setHovered(false)}
       onHoverEnd={() => setHovered(false)}
-      animate={{ width: hovered ? "30vw" : "15vw" }} 
+      // animate={{ width: hovered ? "30vw" : "15vw" }} 
       transition={{ type: "tween", duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-      className=" flex items-center h-[30vh]  bg-white/25  border border-white text-white z-80   p-3 rounded-4xl overflow-hidden"
+      className=" flex flex-nowrap relative items-center md:h-[15vw] h-[30vw] md:w-[15vw] w-[30vw] min-w-[30vw] md:min-w-[15vw]  bg-white/25  border border-white text-white z-80   p-3 rounded-4xl overflow-hidden"
     >
       <img
-        src={img}
+        src={image}
         alt="Image"
     
-        className="w-[14vw] h-full  object-cover shrink-0 rounded-3xl "
+        className="md:w-[14vw] w-full h-full  object-cover shrink-0 rounded-3xl "
       />
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.5 }}
         className="z-80  text-sm "
       >
         <p className="">CONTENT</p>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }

@@ -22,9 +22,9 @@ const Section2_2 = () => {
             NOS <br /> ARENES <br /> STRATEGIQUES
           </p>
           <div
-            className="z-50 md:h-full"
+            className="z-50 md:h-full cursor-pointer"
             onClick={() => {
-              setcardN((l) => l + 1);
+              setcardN((l) => (l + 1) % 6);
             }}
           >
             <Section2Card index={cardN} />
@@ -32,9 +32,9 @@ const Section2_2 = () => {
         </div>
         <img
           src={arrow}
-          className="  w-[4vw] md:w-[2vw] md:mr-[3vw] cursor-pointer z-5"
+          className="  w-[4vw] md:w-[2vw] md:mr-[3vw] cursor-pointer z-50"
           onClick={() => {
-            setcardN((l) => l + 1);
+            setcardN((l) => (l + 1) % 6);
           }}
         />
       </div>

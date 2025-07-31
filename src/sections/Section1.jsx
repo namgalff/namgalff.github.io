@@ -15,7 +15,7 @@ const Section1 = () => {
     return () => window.removeEventListener("mousemove", move);
   }, []);
   return (
-    <div className="w-screen h-[100vh]  md:h-[110vh] flex flex-col items-center justify-center text-white bg-black  " name='HOME'>
+    <div className="w-screen h-[100vh]  md:h-[110vh] flex flex-col items-center justify-center text-white bg-black relative " name='HOME'>
       <div className="h-[20vh] flex w-full"></div>
       <img
         src={bg}
@@ -50,7 +50,7 @@ const Section1 = () => {
          Car chaque seconde compte.{" "}
         </p>
         <p className="font-gmrkL text-[4vw] md:text-[0.8vw]  w-[50%] md:w-[30vw] leading-tight text-center mt-[1%] opacity-80 ">
-          Lorsqu&#39;une personne accorde du temps à une marque, elle y investit déjà une part d&#39;elle meme.
+          Lorsqu'une personne accorde du temps a une marque, elle y investit deja une part d'elle meme.
         </p>
         <div className="font-gmrkM cursor-pointer border text-[4vw] md:text-[1vw] md:px-[2vw] md:py-[0.5vw] px-[14%] py-[2%] rounded-4xl mt-[5%] hover:bg-white hover:text-black transition">
           Discutons-en{" "}
