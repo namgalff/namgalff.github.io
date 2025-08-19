@@ -33,18 +33,18 @@ const EventCarouselleItem = ({ content }) => {
         ref={innerRef}
         drag="x"
         dragConstraints={constraints}
-        className="flex items-center h-[30vh] rounded-3xl gap-6 px-6 py-4 cursor-grab active:cursor-grabbing bg-white/25"
+        className="flex items-center h-[30vh]  lg:h-[50vh]    rounded-3xl gap-6 px-6 py-4 cursor-grab active:cursor-grabbing bg-white/25"
       >
         {/* Text block */}
-        <div className="flex flex-col h-[30vh] py-[3%] justify-around mr-[10vw]">
+        <div className="flex flex-col  w-[40vw]  lg:h-[50vh] lg:justify-center lg:gap-3 h-[30vh] py-[3%] lg:py-[0] justify-around mr-[0vw]">
           <div>
-            <p className="font-gmrkL">client</p>
-            <p className="font-gmrkB text-[5vw]">{content.client}</p>
+            <p className="font-gmrkL lg:text-[2vw]">client</p>
+            <p className="font-gmrkB text-[5vw] lg:text-[3.5vw]">{content.client}</p>
           </div>
 
           <div>
             {content.description.map((e, i) => (
-              <p key={i} className="text-[4vw]">
+              <p key={i} className="text-[3vw] lg:text-[1.5vw]">
                 {e}
               </p>
             ))}
@@ -52,7 +52,7 @@ const EventCarouselleItem = ({ content }) => {
 
           <div>
             {content.domaine.map((e, i) => (
-              <p className="font-gmrkB text-[3vw]" key={i}>
+              <p className="font-gmrkB text-[3vw] lg:text-[1vw]" key={i}>
                 {e}
               </p>
             ))}
@@ -64,7 +64,7 @@ const EventCarouselleItem = ({ content }) => {
           e.type === "image" ? (
              <motion.img
                        layoutId={`image-${i}`}
-                       className="w-[80vw] h-auto object-contain shrink-0 cursor-pointer"
+                       className="w-[80vw] lg:w-[40vw] h-auto object-contain shrink-0 cursor-pointer"
                        src={e.src}
                        key={i}
                        alt={`${content.client}-${i}`}
@@ -74,14 +74,14 @@ const EventCarouselleItem = ({ content }) => {
             <motion.div
               layoutId={`asset-${i}`}
               key={i}
-              className="w-[60vw] h-[30vh] bg-black shrink-0 cursor-pointer flex items-center justify-center rounded-xl overflow-hidden relative"
+              className="w-[30vw]  lg:w-[12vw] shrink-0 cursor-pointer flex items-center justify-center rounded-xl overflow-hidden relative"
               onClick={() => setExpandedAsset(expandedAsset === i ? null : i)}
             >
               {/* Thumbnail-like placeholder */}
-              <iframe
-                src={`https://www.youtube.com/embed/${e.src}?controls=0`}
-                title={`video-${i}`}
-                className="w-full h-full pointer-events-none"
+              <img
+                src={e.thumbnail}
+                //title={`video-${i}`}
+                className="w-[30vh] cursor-pointer"
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white text-3xl font-bold">
                 ▶
@@ -91,14 +91,19 @@ const EventCarouselleItem = ({ content }) => {
         )}
       </motion.div>
 
-      {/* Expanded full screen */}
+         {/* animation  */}
       <AnimatePresence>
         {expandedAsset !== null && (
           <motion.div
             className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 cursor-pointer"
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}
-            animate={{ opacity: 1 , rotate : "90deg", width : "100vh",left : '-57%' }}
+              animate={{
+        opacity: 1,
+        ...(content.assets[expandedAsset].type === "image"
+          ? { width  : '100vw' } 
+          : { scale: 1 }) 
+      }}
              transition={{ duration: 0.3, ease: "easeInOut" }}
             onClick={() => setExpandedAsset(null)}
           >

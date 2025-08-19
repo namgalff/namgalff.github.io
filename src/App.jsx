@@ -4,6 +4,7 @@ import Section2 from "./sections/Section2";
 import Section3 from "./sections/Section3";
 import Section4 from "./sections/Section4";
 import Section5 from "./sections/Section5";
+import NosEvents from "./sections/NosEvents"
 import BottomTextComponent from "./components/BottomTextComponent";
 import BgCircles from "./components/BgCircles";
 import Test from "./sections/Test";
@@ -12,7 +13,7 @@ import Bglights from "./components/Bglights";
 function App() {
   return (
     // h-auto
-    <div className="flex  flex-col bg-black h-[600vh] w-screen overflow-hidden relative  ">
+    <div className="flex  flex-col bg-black h-[700vh] w-screen overflow-hidden relative  ">
       <Bglights />
       <HeaderComponent />
       <MobileNav />
@@ -28,6 +29,7 @@ function App() {
       <Section3 />
       <Section4 />
       <Section5 />
+      <NosEvents/>
     </div>
   );
 }
